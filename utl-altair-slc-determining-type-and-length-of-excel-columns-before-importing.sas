@@ -81,15 +81,10 @@ SOAPBOX OFF
 /*--- macro utl_submit_ps64 on end and in this repo ---*/
 
 %utl_submit_ps64('
-Add-OdbcDsn `
-    -Name "class" `
-    -DriverName "Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)" `
-    -DsnType "User" `
-    -SetPropertyValue "Dbq=d:\xls\have.xlsx"
-Get-OdbcDsn
-');
+Add-OdbcDsn -Name "class" -DriverName "Microsoft Excel Driver (*.xls, *.xlsx, *.xlsm, *.xlsb)" -DsnType "User" -SetPropertyValue "Dbq=d:\xls\havw.xlsx"; 
+ Get-OdbcDsn; ');
 
-/*--- or open a commad window as admin and paste powershell script. ---*/
+/*--- or open a command window as admin and paste powershell script. ---*/
 /*--- Or open USER odbc 64bit and mouse serf.                       ---*/
 
 /*
